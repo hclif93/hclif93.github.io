@@ -1,4 +1,4 @@
-#banner, h1 {
+h1 {
     font-size: 100px;
     font-weight: bold;
     color: khaki;
@@ -6,7 +6,7 @@
     background-image: url('https://content.codecademy.com/courses/freelance-1/unit-2/pattern.jpeg')
 }
 
-.header {
+h2 {
     font-size: 32px;
     font-weight: bold;
     color: white;
