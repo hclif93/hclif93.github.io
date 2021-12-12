@@ -211,6 +211,11 @@ footer {
         height: 930px;
         background-size: 1250px;
     }
+
+    footer {
+        font-size: 15px;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width:750px) {
