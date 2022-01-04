@@ -96,6 +96,7 @@ header {
 
 #About {
     padding: 30px 85px;
+    line-height: 30px;
 }
 
 .Julie {
@@ -109,6 +110,7 @@ header {
     justify-self: left;
     align-self: center;
     line-height: 30px;
+    padding: 50px;
 }
 
 .Julie img {
@@ -183,3 +185,21 @@ footer {
     text-align: center;
     margin: 35px 20px;
 }
+
+/* Media queries */
+
+@media only screen and (max-width: 1115px) {
+    .Julie {
+        flex-direction: column;
+}
+    
+@media only screen and (max-width: 800px) {
+    .banneroverlay img {
+    width: 300px;
+}
+
+@media only screen and (max-width: 600px) {  
+    .primarynav a {
+        display: none;
+}
+   
