@@ -192,14 +192,24 @@ footer {
     .Julie {
         flex-direction: column;
 }
+    .Julie img {
+        align-self: center;
+}
+    .Julie p {
+        padding: 0;
+}
+        
     
 @media only screen and (max-width: 800px) {
     .banneroverlay img {
-    width: 300px;
+        width: 475px;
 }
 
 @media only screen and (max-width: 600px) {  
     .primarynav a {
         display: none;
+}
+    .banneroverlay img {
+        width: 350px;
 }
    
