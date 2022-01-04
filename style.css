@@ -190,7 +190,7 @@ footer {
 
 @media only screen and (max-width: 1115px) {
     #About {
-        padding: 0;
+        padding: 30px 15px;
 }
     .Julie {
         flex-direction: column;
