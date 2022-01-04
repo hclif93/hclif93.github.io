@@ -196,8 +196,8 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        ppadding-left: 0;
-        padding-right: 0;
+        ppadding-left: 15;
+        padding-right: 15;
 }
     .Julie img {
         align-self: center;
@@ -225,11 +225,11 @@ footer {
 }
     
     .Julie p {
-        font-size: 11px;
+        font-size: 13px;
 }
    
     #About p {
-        font-size: 11px;
+        font-size: 13px;
 }
     
 @media only screen and (max-width: 475px) { 
