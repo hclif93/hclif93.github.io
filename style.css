@@ -219,4 +219,16 @@ footer {
     .banneroverlay img {
         width: 350px;
 }
+    
+    .Julie p {
+        font-size: 11px;
+}
    
+    #About p {
+        font-size: 11px;
+}
+    
+@media only screen and (max-width: 450px) { 
+    .productsimages {
+        width: 100%;
+}
