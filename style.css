@@ -196,8 +196,8 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        ppadding-left: 15;
-        padding-right: 15;
+        padding-left: 15px;
+        padding-right: 15px;
 }
     .Julie img {
         align-self: center;
@@ -238,5 +238,5 @@ footer {
 }
     
     .image img {
-         width: 300;
+         width: 300px;
 }
