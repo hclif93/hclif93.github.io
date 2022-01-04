@@ -6,74 +6,79 @@
 
 html {
     font-family: helvetica, sans-serif;
-    font-size: 22px;
-    color: seashell;
-    background-color: black;
-    opacity: 0.9;
+    font-size: 16px;
     text-align: center;
     width: 100%;
 }
 
-/* Primary Navbar section */
-.navcontainer {
-    width: 100%;
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Cormorant', serif;
+    font-size: 25px;
+}
+
+/*Primary Nav section*/
+nav {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    border-bottom: 1px solid seashell;
-    height: 69px;
+    border-bottom: 5px solid #F28C28;
     position: fixed;
     z-index: 1;
-    background-color: black;
+    background-color: white;
 }
 
 .logo {
-    margin-left: 10px;
     display: inline-flex;
-    height: 50px;
+    max-height: 65px;
     width: auto;
+    margin: 25px;
 }
 
-.primarynavitem li {
-    list-style-type: none;
+.logo:hover {
+    transform: scale(1.15);
+}
+
+.primarynav li {
     display: inline-flex;
+    list-style-type: none;
     justify-content: flex-end;
     align-items: center;
-    text-decoration: underline;
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
-.primarynavitem a {
-    color: seashell;
+.primarynav a {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.hamburger {
-    display: none;
+.primarynav a:hover {
+    transform: scale(1.25);
+    color: #F28C28;
 }
 
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: seashell;
-}
+/* Banner section */
 
-/* Mission section */
-#mission {
-    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+header {
+    background-image: url("./Resources/3112678.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     height: 700px;
-    max-width: 1200px;
+    width: auto;
     margin: 0 auto;
 }
 
-.missioncontainer {
+#bannercontainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,173 +86,100 @@ html {
     flex-direction: column;
 }
 
-.missionoverlay {
-    width: 100%;
-    background-color: black;
+.banneroverlay img {
+    width: 600px;
     margin: auto;
     padding: 10px;
 }
 
-/* Tea of the month section */
+/* About section */
 
-.teaofthemonthheader {
-    margin-top: 3rem;
+#About {
+    padding: 30px 85px;
+}
+
+.Julie {
+    display: flex;
+    padding-left: 150px;
+    padding-right: 200px;
+    padding-bottom: 50px
+}
+
+.Julie p {
+    justify-self: left;
+    align-self: center;
+    line-height: 30px;
+}
+
+.Julie img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+/* Products section */
+#products {
+    background-color: rgba(242, 140, 40, 0.7);
+    padding-bottom: 50px;
+}
+
+.productsheader {
+    padding-top: 30px;
+    padding-bottom: 20px;
     line-height: 50px;
 }
 
-.teaofthemonthimages {
+.productsimages {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 20px;
     max-width: 1000px;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
-.teaimage img {
+.image {
+    background-color: #FAD5A5;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.image:hover {
+    transform: scale(1.08);
+}
+
+.image img {
     margin: 10px auto;
-    height: 200px;
-    width: 300px;
-}
-
-/* Locations Section */
-
-#locations {
-    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 500px;
-    max-width: 1200px;
-    margin: 3rem auto 0.5rem;
-    justify-content: center;
-}
-
-.locationheader {
-    padding-top: 3rem;
-}
-
-.locationcontainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
-    width: 100%;
-    flex-direction: row;
-}
-
-.locationitem {
-    height: 300px;
-    background-color: black;
-    margin: auto 20px;
-    padding: 10px;
-    line-height: 2.5rem;
-    flex-basis: 30%;
-    box-sizing: border-box;
+    height: 250px;
+    width: 400px;
+    border-radius: 15px;
 }
 
 /* Contact section */
 
-.contact {
-    height: 200px;
-    margin: 15px;
-    line-height: 60px;
+#contact {
+    margin-top: 35px;
+}
+.socialsinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socials {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+
+.socials:hover {
+    transform: scale(1.25);
 }
 
 /* Footer section */
 
 footer {
-    text-align: left;
+    text-align: center;
     margin: 35px 20px;
-}
-
-/* Media queries */
-@media only screen and (max-width: 640px) {
-    .primarynavitem {
-        position: fixed;
-        left: -100%;
-        top: 5rem;
-        flex-direction: column;
-        background-color: #fff;
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
-    }
-
-    .primarynavitem.active {
-        left: 0;
-    }
-
-    .primarynavitem li {
-        margin: 2.5rem 0;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        margin-right: 10px;
-    }
-
-    .missionoverlay h4 {
-        font-size: 15px;
-    }
-
-    .locationcontainer {
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .locationitem {
-        width: 300px;
-        height: 300px;
-        margin-bottom: 15px;
-    }
-
-    #locations {
-        height: 930px;
-        background-size: 1250px;
-    }
-
-    footer {
-        font-size: 15px;
-        text-align: center;
-    }
-}
-
-@media only screen and (max-width:750px) {
-    li {
-        font-size: 0.9rem;
-        list-style-type: none;
-        display: block;
-        justify-content: flex-end;
-        flex-direction: column;
-        text-decoration: underline;
-        text-align: right;
-    }
-    .locationitem {
-        font-size: 0.8rem;
-    }
-}
-@media only screen and (max-width: 1129px) {
-    .our-mission,
-    .locations-container {
-        width: 100%;
-    }
-}
-@media only screen and (max-width: 1132px) {
-    .our-mission,
-    .locations-container {
-        width: 100%;
-    }
-    .locations-container {
-        min-height: 1050px;
-    }
-    .address-container {
-        margin-top: 2.7rem;
-        gap: 1rem;
-    }
 }
