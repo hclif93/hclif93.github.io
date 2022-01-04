@@ -191,6 +191,7 @@ footer {
 @media only screen and (max-width: 1115px) {
     .Julie {
         flex-direction: column;
+        padding: 30px 85px;
 }
     .Julie img {
         align-self: center;
