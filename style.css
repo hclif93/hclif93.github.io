@@ -103,7 +103,7 @@ header {
     display: flex;
     padding-left: 150px;
     padding-right: 200px;
-    padding-bottom: 50px
+    padding-bottom: 50px;
 }
 
 .Julie p {
@@ -191,6 +191,8 @@ footer {
 @media only screen and (max-width: 1115px) {
     .Julie {
         flex-direction: column;
+        justify-content: center;
+        align-content: center;
         padding: 30px 85px;
 }
     .Julie img {
@@ -198,6 +200,7 @@ footer {
 }
     .Julie p {
         padding: 0;
+        margin: 0;
 }
         
     
