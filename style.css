@@ -231,6 +231,6 @@ footer {
 }
     
 @media only screen and (max-width: 475px) { 
-    .productsimages {
+    .image {
         width: 500px;
 }
